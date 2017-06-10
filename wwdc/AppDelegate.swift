@@ -43,6 +43,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+    
+    // MARK: - URL Handling
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        // Find the simulator identifier 
+        let urlComponents = NSURLComponents(url: url, resolvingAgainstBaseURL: true)
+        let queryItems = urlComponents?.queryItems
+        
+        print("Scheme:\t\(urlComponents?.scheme ?? "none")")
+        print("Host:\t\(urlComponents?.host ?? "none")")
+        print("Path:\t\(urlComponents?.path ?? "none")")
+        print("Query items:\t\(queryItems ?? [])")
+        
+        return true
+    }
 
     // MARK: - Core Data stack
 
