@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>wwdc.xcscheme</key>
+		<key>wwdc.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FD24E0D21EEA00C50091578E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD24E0E91EEA00C60091578E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD24E0F41EEA00C60091578E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
