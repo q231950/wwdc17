@@ -9,9 +9,13 @@
 import XCTest
 
 class wwdcUITests: XCTestCase {
+    
+    var app: XCUIApplication!
         
     override func setUp() {
         super.setUp()
+        
+        app = XCUIApplication(bundleIdentifier: "com.xing.labs.wwdc17.wwdc")
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
         
@@ -31,6 +35,13 @@ class wwdcUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTContext.runActivity(named: "Tap button and take screenshot") { (activity) in
+            app.buttons["my button"].firstMatch.tap()
+            let screenshot = XCUIScreen.main.screenshot()
+            let attachment = XCTAttachment(screenshot: screenshot)
+            attachment.lifetime = .keepAlways
+            activity.add(attachment)
+        }
     }
     
 }
