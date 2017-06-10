@@ -138,6 +138,7 @@
 				FD24E0CF1EEA00C50091578E /* Sources */,
 				FD24E0D01EEA00C50091578E /* Frameworks */,
 				FD24E0D11EEA00C50091578E /* Resources */,
+				FD3C4C971EEB509300CE5E73 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -253,6 +254,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD3C4C971EEB509300CE5E73 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\necho \"\"\necho \"================= Temporary files directory content ===================\"\nls $TEMP_FILES_DIR\necho \"=======================================================================\"\necho \"\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD24E0CF1EEA00C50091578E /* Sources */ = {
@@ -522,6 +539,7 @@
 				FD24E1001EEA00C60091578E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD24E1011EEA00C60091578E /* Build configuration list for PBXNativeTarget "wwdcTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +548,7 @@
 				FD24E1031EEA00C60091578E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD24E1041EEA00C60091578E /* Build configuration list for PBXNativeTarget "wwdcUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +557,7 @@
 				FD24E1061EEA00C60091578E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
