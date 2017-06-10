@@ -49,6 +49,7 @@
 		FD24E0F51EEA00C60091578E /* wwdcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wwdcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD24E0F91EEA00C60091578E /* wwdcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wwdcUITests.swift; sourceTree = "<group>"; };
 		FD24E0FB1EEA00C60091578E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC74CC91EEB9BA70002F2AF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		FD24E0CA1EEA00C50091578E = {
 			isa = PBXGroup;
 			children = (
+				FDC74CC91EEB9BA70002F2AF /* README.md */,
 				FD24E0D51EEA00C50091578E /* wwdc */,
 				FD24E0ED1EEA00C60091578E /* wwdcTests */,
 				FD24E0F81EEA00C60091578E /* wwdcUITests */,

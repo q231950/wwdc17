@@ -33,7 +33,7 @@ Assuming the identifier of the simulator you launched the app in was `E7570A9E-C
 
 `kim$ xcrun simctl openurl E7570A9E-C4E3-4205-ADE3-9F7D8E39C251 'wwdc://host/abc?a=1&b=2&c=3'`
 
-This will yield the following in the console output:
+This will yield the following in the console output as the open URL delegate method is implemented [in the app delegate](https://github.com/q231950/wwdc17/blob/master/wwdc/AppDelegate.swift#L47-L61):
 
 ```
 Scheme:	wwdc
